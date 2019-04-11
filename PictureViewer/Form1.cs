@@ -34,7 +34,9 @@ namespace PictureViewer
 
         private void setBackgroundButton_Click(object sender, EventArgs e)
         {
-
+            // shows colours to choose, after take on and click OK change background color
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+                pictureBox1.BackColor = colorDialog1.Color;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
