@@ -148,9 +148,11 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.showButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancelButton = this.clearButton;
             this.ClientSize = new System.Drawing.Size(624, 303);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
