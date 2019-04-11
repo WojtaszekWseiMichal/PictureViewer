@@ -19,6 +19,7 @@ namespace PictureViewer
 
         private void showButton_Click(object sender, EventArgs e)
         {
+            // shows file browser, after clicking OK upload file
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);
@@ -27,7 +28,8 @@ namespace PictureViewer
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-
+            // set image property to null
+            pictureBox1.Image = null;
         }
 
         private void setBackgroundButton_Click(object sender, EventArgs e)
