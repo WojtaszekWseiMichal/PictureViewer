@@ -34,7 +34,7 @@ namespace PictureViewer
 
         private void setBackgroundButton_Click(object sender, EventArgs e)
         {
-            // shows colours to choose, after take on and click OK change background color
+            // shows colours to choose, after take on and click OK change background color of picture box
             if (colorDialog1.ShowDialog() == DialogResult.OK)
                 pictureBox1.BackColor = colorDialog1.Color;
         }
@@ -47,7 +47,12 @@ namespace PictureViewer
 
         private void strechtCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-
+            // if user check box it should resize img to current windows size
+            // if useer uncheck box set img size to normal
+            if (strechtCheckbox.Checked)
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            else
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
         }
     }
 }
