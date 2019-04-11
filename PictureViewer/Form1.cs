@@ -41,7 +41,8 @@ namespace PictureViewer
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-
+            // close the program
+            this.Close();
         }
 
         private void strechtCheckbox_CheckedChanged(object sender, EventArgs e)
